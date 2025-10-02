@@ -2,6 +2,7 @@ import Badge from "./components/Badge/Badge";
 import Banner from "./components/Banner/Banner";
 import Card from "./components/Card/Card";
 import Testimonial from "./components/Testimonial/Testimonial";
+import TestimonialNoPic from "./components/Testimonial/TestimonialNoPic";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 
@@ -133,6 +134,13 @@ function App() {
               adipiscing nunc urna, sit."
           author="May Andersons"
           work="Workcation, CTO"
+        />
+
+        <TestimonialNoPic
+          logo="../src/assets/aven.png"
+          quote="“Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+          expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in
+          laborum sed rerum et corporis.”"
         />
       </div>
     </>

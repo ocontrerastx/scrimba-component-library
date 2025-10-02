@@ -1,18 +1,22 @@
 import "./TestimonialNoPic.css";
 
-export default function TestimonialNoPic() {
+export default function TestimonialNoPic({ logo, quote, author, work }) {
   return (
     <div className="testimonial-no-pic">
+      <img
+        src="../src/assets/dot-pattern.png"
+        alt=""
+        className="testimonial-background"
+      />
       <div className="testimonial-no-pic-content">
-        <div className="testimonial-logo"></div>
-        <blockquote>
-          “Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-          expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in
-          laborum sed rerum et corporis.”
-        </blockquote>
+        <div className="testimonial-logo">
+          <img src={logo} alt="" />
+        </div>
+        <blockquote>{quote}</blockquote>
         <figcaption>
-          <p className="testimonial-author">May Andersons</p>
-          <p className="testimonial-author-work">Workcation, CTO</p>
+          <span className="testimonial-author">Jen Mendoza</span>
+          <span className="testimonial-author-divider"> / </span>
+          <span className="testimonial-author-work">Aven, VP Sales</span>
         </figcaption>
       </div>
     </div>
