@@ -126,7 +126,14 @@ function App() {
 
       <div className="testimonial-container">
         <h2>Testimonials</h2>
-        <Testimonial />
+        <Testimonial
+          picture="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          quote="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna
+              nulla vitae laoreet augue. Amet feugiat est integer dolor auctor
+              adipiscing nunc urna, sit."
+          author="May Andersons"
+          work="Workcation, CTO"
+        />
       </div>
     </>
   );
