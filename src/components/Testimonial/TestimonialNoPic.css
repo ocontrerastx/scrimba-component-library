@@ -51,16 +51,60 @@
   font-weight: 500;
 }
 
-.testimonial-no-pic-content figcaption {
-  text-align: center;
+/*
+ * MOBILE-FIRST STYLES (Default for small screens)
+ * Author info is stacked (on separate lines) and left-aligned, no divider
+ */
+
+.testimonial-author-info {
+  display: block;
+  text-align: left;
 }
 
+.testimonial-author,
+.testimonial-author-work {
+  display: block;
+  text-align: left;
+}
+
+.testimonial-author-divider {
+  display: none;
+}
+
+/* Medium Screens Adjustment (up to 880px) */
 @media (max-width: 880px) {
   .testimonial-no-pic {
     padding: 48px 0;
   }
 }
 
+/* Large Screens (Inline Author Info) */
+@media (min-width: 701px) {
+  .testimonial-no-pic-content {
+    text-align: center;
+  }
+  .testimonial-author-info {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* Allow spans to be inline again */
+  .testimonial-author,
+  .testimonial-author-work {
+    display: inline;
+    text-align: inherit;
+    white-space: nowrap;
+  }
+
+  /* Show the divider */
+  .testimonial-author-divider {
+    display: inline;
+    padding: 0 0.5em;
+  }
+}
+
+/* Small Screens Adjustments (up to 700px) */
 @media (max-width: 700px) {
   .testimonial-no-pic {
     padding: 16px;
@@ -68,7 +112,7 @@
 
   .testimonial-no-pic-content {
     padding: 16px;
-    align-items: none;
+    align-items: flex-start;
   }
 
   .testimonial-no-pic-content blockquote {
@@ -76,18 +120,6 @@
   }
 
   .testimonial-background {
-    position: absolute;
-    left: -15px;
     bottom: -100px;
-    width: 180px;
-    z-index: 1;
-  }
-
-  .testimonial-no-pic-content figcaption {
-    text-align: left;
-  }
-
-  .testimonial-author {
-    display: block;
   }
 }

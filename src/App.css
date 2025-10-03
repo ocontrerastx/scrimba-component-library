@@ -3,54 +3,35 @@ body {
 }
 
 #root {
-  max-width: 1280px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 2rem;
 }
 
-.badge-container {
+h1 {
+  margin-bottom: 48px;
+}
+
+.component-library-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 72px;
+}
+
+.component-wrapper {
+  display: flex;
+  flex-direction: column;
   gap: 24px;
 }
 
-.badge-variant-container {
+.component-variant-wrapper {
   display: flex;
   gap: 16px;
+  flex-wrap: wrap;
 }
 
-.banner-container {
-  margin-top: 54px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 24px;
-}
-
-.banner-variant-container {
-  width: 100%;
+.component-variant-wrapper-column {
   display: flex;
   flex-direction: column;
   gap: 16px;
-}
-
-.card-container {
-  margin-top: 78px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 24px;
-}
-
-.card-variant-container {
-  display: flex;
-  gap: 32px;
-}
-
-.testimonial-container {
-  margin-top: 78px;
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
 }

@@ -14,9 +14,9 @@ export default function TestimonialNoPic({ logo, quote, author, work }) {
         </div>
         <blockquote>{quote}</blockquote>
         <figcaption>
-          <span className="testimonial-author">Jen Mendoza</span>
+          <span className="testimonial-author">{author}</span>
           <span className="testimonial-author-divider"> / </span>
-          <span className="testimonial-author-work">Aven, VP Sales</span>
+          <span className="testimonial-author-work">{work}</span>
         </figcaption>
       </div>
     </div>
